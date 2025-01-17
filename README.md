@@ -1,4 +1,5 @@
-# Mock API Helper
+# Mock API Helper - Helps development teams in mocking API responses.
+### 🗂️ Integrated with Redis cache and API rate limiter.
 
 ## Usage after setup:
 
