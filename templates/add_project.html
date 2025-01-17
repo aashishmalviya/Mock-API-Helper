@@ -1,0 +1,55 @@
+{% extends 'base.html' %}
+{% block title %} Add Project {% endblock title %}
+
+
+{% block content %}
+
+<div class="container py-5">
+    <a href="{% url 'home' %}" class="btn btn-dark"> Home </a>
+    <div class="row mb-1">
+        
+        <div class="col-md-12 my-2">
+            <h3> Add or Update your project and expected JSON response</h3>
+            
+        </div>
+        <div class="col-md-12 my-2">
+            <hr>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+            <form method="POST">
+                {% csrf_token %}
+                <div class="textbox">
+                    <div class="form-group my-2">
+                        <input class="form-control" name="project_name" type="text" placeholder="Type project name" required>
+                        {{form.project_name.error}}
+                    </div>
+                    
+                    <div class="form-group my-2">
+                        <input class="form-control" name="resource_name" type="text" placeholder="Type resource name" required>
+                        {{form.resource_name.error}}
+                    </div>
+                </div>
+                
+                <label for="method_selected">Select query type:</label>
+                <select name="method" id="method">
+                    <option value="GET">GET</option>
+                    <option value="POST">POST</option>
+                </select>
+                
+                <div class="form-group my-2">
+                    <textarea class="form-control" name="json_response" rows="10" cols="10" placeholder="Enter expected JSON response"></textarea>
+                    {{submission_result}}
+                </div>
+
+                <div class="form-group d-grid gap-2">
+                    <button class="btn btn-dark">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+{% endblock content %}

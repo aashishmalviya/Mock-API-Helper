@@ -1,0 +1,59 @@
+{% extends 'base.html' %}
+{% block title %} Home {% endblock title %}
+
+{% block content %}
+    <header></header>
+
+    <div class="container py-5">
+        <h3 class="display-1">
+            <div class="col-md-12 d-flex justify-content-center my-1 flex-row">
+                Mock API helper
+            </div>
+        </h3>
+        
+        <div class = "row justify-content-center">
+            
+            <div class="col-md-12 d-flex justify-content-center my-1 flex-row">
+                <a href="{% url 'add-project' %}" class="btn btn-dark">Add or Update project </a>
+            </div>         
+
+            <div class = "col-md-8 my-1">
+                <hr>
+            </div>
+            
+            <div class = "col-md-9 my-2">
+                <b>Usage:</b>                    
+                    <ol>
+                        <li> Click <b>Add or Update project</b> for adding new projects or updating existing ones. </li>
+                        <br><li> Retrieve existing JSON response:
+                            <ul>
+                                <br><li><b>GET</b>:
+                                    <br><code>curl -X GET http://127.0.0.1:8000/project_name/resource_name/</code>
+                                </li>
+                                <br><li><b>POST</b>:
+                                    <ul>
+                                        <br><li><b>Generate CSRF token via:</b>
+                                            <br><code>curl -c cookie.txt http://127.0.0.1:8000/project_name/resource_name/</code>
+                                        </li>
+                                
+                                        <br><li><b>use curl command as below:</b>
+                                            <br><code>curl --cookie cookie.txt http://127.0.0.1:8000/project_name/resource_name/ -H "X-CSRFToken: CSRF_TOKEN" -X POST</code>
+                                        </li>
+                                            
+                                        <br><li><b>example</b>:
+                                            <br><code>curl --cookie cookie.txt http://127.0.0.1:8000/project_name/resource_name/ -H "X-CSRFToken: someCsrFtokEnValUeabcd0123456789" -X POST</code>
+                                        </li>
+                                    </ul>
+                                    </li>
+                            </ul>
+                        </li>
+                    </ol>
+            </div>
+
+            <div class = "col-md-8 my-1">
+                <hr>
+            </div>
+            
+        </div>
+    </div>
+{% endblock content %}
