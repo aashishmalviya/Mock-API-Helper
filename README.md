@@ -5,13 +5,11 @@
 
 #### 1. Access the project at http://127.0.0.1:8000/
 
-![image](https://github.com/user-attachments/assets/58814824-ad57-4a55-a858-e15d54da9d47)
-
+<img width="826" height="521" alt="img1" src="https://github.com/user-attachments/assets/0c77d8fe-0b8b-40a7-9675-81f98b75b652" />
 
 #### 2. Click Add or Update project for adding new projects or updating existing ones.
 
-![image](https://github.com/user-attachments/assets/9c11f05f-06fe-43ae-8600-e9852076269b)
-
+<img width="826" height="413" alt="img2" src="https://github.com/user-attachments/assets/1a16ce70-385d-4cb3-8ed0-6f91f55229c0" />
 
 #### 3. Add your project details, click Submit.
 
