@@ -34,3 +34,8 @@ curl --cookie cookie.txt http://127.0.0.1:8000/project_name/resource_name/ -H "X
 example:
 curl --cookie cookie.txt http://127.0.0.1:8000/project_name/resource_name/ -H "X-CSRFToken: someCsrFtokEnValUeabcd0123456789" -X POST
 ```
+
+<br>
+<p align="center">
+  Like it? ❤️ <a href="https://linkedin.com/in/aashish-malviya">Let's connect 🤗</a>
+</p>
